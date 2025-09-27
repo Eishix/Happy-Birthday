@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD Nor Afifah</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <style>
+    body {
+      background-image: url("https://th.bing.com/th/id/R.7a0e55a6a19140f9e4dbb19536b5d75a?rik=0AE%2bksHLHVIWdA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fEblVI0w.jpg&ehk=yK1oVM%2bummQteXRyxSKFt1oyMzpQz2xkS4EMO8n0xNo%3d&risl=&pid=ImgRaw&r=0");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      /* full layar */
+    }
+  </style>
+</head>
+<body class="flex justify-center h-screen items-center">
+    
+    <div class="bg-white border px-10 py-8 border-4 border-gray-300 shadow-lg shadow-pink-300 rounded-xl text-center animate__animated animate__tada m-8 w-80" id="kartu">
+        <h1 class="text-3xl font-bold">Happy Eighteen</h1>
+        <h1 class="text-2xl text-pink-500 font-bold animate__animated animate__tada animate__infinite">Nor Afifah</h1>
+        <button class="p-2 bg-pink-600 text-white rounded mt-5 hover:bg-pink-900 transition ease-in w-full animate__animated animate__tada" onclick="ubahKartu()">Klik disini</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script>confetti({
+  particleCount: 100,
+  spread: 70,
+  origin: { y: 0.6 },
+});
+let kartu = document.getElementById("kartu")
+function ubahKartu() {
+    kartu.innerHTML = `   <h1 class="font-semibold text-wrap animate__animated animate__tada">Selamat ulang tahun yang ke-19 🎉
+Semoga di usia baru ini kamu selalu diberi kesehatan, kebahagiaan, dan langkahmu semakin dekat dengan semua impianmu, Semoga kita bisa sama-sama lagi yaa.</h1>
+<h2 class="mt-3 animate__animated animate__tada">- Dari : Adal-</h2>
+<button class="p-2 bg-pink-600 text-white rounded mt-5 hover:bg-pink-900 transition ease-in w-full animate__animated animate__tada" onclick="refresh()">Tutup</button>
+`;
+}
+function refresh() {
+    location.reload();
+}
+</script>
+</body>
+</html>
